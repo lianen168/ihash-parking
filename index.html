@@ -3,167 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ihash.ai</title>
-    <meta name="description" content="ihash.ai — Reserved domain. For strategic inquiries only.">
+    <title>IHASH.AI | The Immutable Proof of Intelligence</title>
+    <meta name="description" content="Premium Domain Asset for Sale. The bridge between Decentralized Compute, Zero-Knowledge Proofs, and AI Identity.">
+    <!-- Brand protection -->
+    <meta name="google" content="notranslate" />
+
+    <!-- Fonts: Space Grotesk (Tech) & Inter (Data) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
+        :root {
+            --bg-body: #02040a; /* Deep Void Blue */
+            --bg-card: #080c14;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-cyan: #06b6d4; /* Crypto/Web3 */
+            --accent-green: #10b981; /* Compute/Matrix */
+            --accent-purple: #8b5cf6; /* AI */
+            --border: rgba(6, 182, 212, 0.15);
+            --glow: rgba(6, 182, 212, 0.1);
+            --glow-strong: rgba(6, 182, 212, 0.25);
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            line-height: 1.6; 
-            color: #ffffff; 
-            background: linear-gradient(135deg, #06080a 0%, #0c1014 100%);
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 20px; 
-            text-align: center; 
-            position: relative; 
-            overflow-x: hidden; 
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        .light-effect { 
-            position: absolute; 
-            top: 50%; 
-            left: 50%; 
-            width: min(120vw, 1000px); 
-            height: min(120vh, 1000px); 
-            background: radial-gradient(circle at center, rgba(100, 220, 240, 0.1) 0%, transparent 70%);
-            transform: translate(-50%, -50%); 
-            pointer-events: none; 
-            z-index: -1; 
+
+        .notranslate { translate: no; }
+        h1, h2, h3, .brand-font { font-family: 'Space Grotesk', sans-serif; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* --- Header --- */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: rgba(2, 4, 10, 0.9);
+            backdrop-filter: blur(12px);
+            z-index: 100;
         }
-        .container { 
-            max-width: 760px; 
-            width: 100%; 
-            padding: 70px 40px; 
-            background: rgba(10, 12, 16, 0.92);
-            backdrop-filter: blur(12px); 
-            border-radius: 24px; 
-            box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.65),
-                0 0 0 1px rgba(100, 220, 240, 0.25);
-            border: 1px solid rgba(100, 220, 240, 0.2); 
-            z-index: 1; 
+
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: #fff; }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at center, var(--glow) 0%, transparent 60%);
+            overflow: hidden;
         }
-        h1 { 
-            font-size: clamp(4rem, 11vw, 6.8rem); /* 8 字符 → 超大字体 */
-            font-weight: 300; 
-            letter-spacing: 0.12em; 
-            margin-bottom: 35px; 
-            opacity: 0.98; 
+
+        /* --- DYNAMIC TYPOGRAPHY --- */
+        .mega-title {
+            font-size: clamp(3rem, 12vw, 9rem);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        /* The "i" - Personal/Intelligent */
+        .title-prefix {
+            color: #fff;
+            position: relative;
+            font-family: 'Space Grotesk', monospace;
+            /* Lowercase i aesthetic like Apple/Tech */
             text-transform: lowercase; 
-            color: #c0f0f8;
-            font-feature-settings: "liga" off;
-            text-shadow: 0 0 10px rgba(100, 220, 240, 0.3);
+            margin-right: 5px;
         }
-        .domain { display: inline-block; transition: opacity 0.3s ease; }
-        .domain:hover { opacity: 0.85; }
-        p { 
-            font-size: clamp(1.15rem, 4.2vw, 1.5rem); 
-            opacity: 0.85; 
-            max-width: 640px; 
-            margin: 0 auto 45px; 
-            line-height: 1.8; 
-            color: #a0d8e8;
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace, sans-serif;
+
+        /* The dot of the 'i' pulses */
+        .title-prefix::after {
+            content: '';
+            position: absolute;
+            top: 18%; /* Position for the dot of the 'i' */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 15px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-cyan);
+            animation: neural-pulse 2s infinite;
         }
-        .note-section { 
-            background: rgba(16, 20, 24, 0.45); 
-            border-radius: 16px; 
-            padding: 28px; 
-            margin: 45px 0; 
-            border: 1px solid rgba(100, 220, 240, 0.25); 
+
+        /* The "HASH" - Cryptographic/Compute */
+        .title-word {
+            background: linear-gradient(180deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
         }
-        .note-text { 
-            font-size: 0.95rem; 
-            opacity: 0.75; 
-            line-height: 1.8; 
-            color: #80c0d8;
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace, sans-serif;
-            text-align: left;
+
+        /* Digital Scan Effect overlay on HASH */
+        .title-word::before {
+            content: attr(data-text);
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--accent-green);
+            overflow: hidden;
+            width: 0%;
+            border-right: 2px solid var(--accent-green);
+            animation: digital-scan 5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+            -webkit-text-fill-color: var(--accent-green);
+            white-space: nowrap;
         }
-        .contact-section { margin-top: 45px; }
-        .email-link { 
-            font-size: 1.45rem; 
-            color: #60e0f0; 
-            text-decoration: none; 
-            font-family: 'Courier New', monospace; 
-            padding: 12px 26px; 
-            background: rgba(100, 220, 240, 0.08); 
-            border-radius: 10px; 
-            display: inline-block; 
-            border: 1px solid rgba(100, 220, 240, 0.35); 
-            transition: all 0.3s ease; 
+
+        /* The ".AI" */
+        .title-tld {
+            color: var(--accent-purple);
+            -webkit-text-fill-color: var(--accent-purple);
+            font-size: 0.5em; /* Smaller TLD */
+            align-self: flex-start;
+            margin-top: 15px;
+            animation: ai-glow 3s ease-in-out infinite alternate;
         }
-        .email-link:hover { 
-            background: rgba(100, 220, 240, 0.18); 
+
+        /* Animations */
+        @keyframes neural-pulse {
+            0% { opacity: 0.5; box-shadow: 0 0 0px var(--accent-cyan); }
+            50% { opacity: 1; box-shadow: 0 0 20px var(--accent-cyan); }
+            100% { opacity: 0.5; box-shadow: 0 0 0px var(--accent-cyan); }
+        }
+
+        @keyframes digital-scan {
+            0% { width: 0%; opacity: 0; }
+            5% { opacity: 1; }
+            30% { width: 100%; opacity: 1; }
+            80% { width: 100%; opacity: 0; }
+            100% { width: 0%; opacity: 0; }
+        }
+
+        @keyframes ai-glow {
+            from { text-shadow: 0 0 5px var(--accent-purple); }
+            to { text-shadow: 0 0 25px var(--accent-purple); }
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 25px auto 60px;
+            font-weight: 300;
+        }
+
+        .highlight-term { color: var(--accent-cyan); font-weight: 600; }
+        .highlight-term-2 { color: var(--accent-green); font-weight: 600; }
+
+        /* --- Pricing Card --- */
+        .price-hero-card {
+            background: var(--bg-card);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 50px rgba(6, 182, 212, 0.15);
+            position: relative;
+        }
+
+        .status-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent-cyan);
+            color: #000;
+            padding: 4px 16px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .price-main { font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
+        .price-sub { font-size: 1.1rem; color: var(--accent-green); margin-bottom: 20px; }
+        
+        .buy-btn {
+            display: block;
+            width: 100%;
+            background: #fff;
+            color: #000;
+            font-weight: 700;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-bottom: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover { 
             transform: translateY(-3px); 
-            box-shadow: 0 8px 20px rgba(100, 220, 240, 0.2); 
+            background: var(--accent-cyan);
+            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4);
         }
-        .contact-note { 
-            font-size: 0.92rem; 
-            opacity: 0.65; 
-            margin-top: 18px; 
-            font-style: italic; 
-            color: #60a8b8;
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace, sans-serif;
+
+        /* --- 9 Verticals Section --- */
+        .section-header { text-align: center; margin: 120px 0 60px; }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 15px; color: #fff; }
+        .section-header p { color: var(--text-muted); max-width: 650px; margin: 0 auto; }
+
+        .grid-9 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
         }
-        .footer { 
-            position: absolute; 
-            bottom: 30px; 
-            font-size: 0.82rem; 
-            opacity: 0.4; 
-            width: 100%; 
-            text-align: center; 
-            color: #508898;
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace, sans-serif;
+
+        .card {
+            background: linear-gradient(145deg, #0a0e17 0%, #02040a 100%);
+            border: 1px solid var(--border);
+            padding: 35px;
+            border-radius: 8px;
+            transition: all 0.4s ease;
+            position: relative;
         }
-        @media (max-width: 768px) { 
-            .container { padding: 50px 30px; margin: 20px; } 
-            .email-link { font-size: 1.25rem; } 
-            h1 { 
-                font-size: clamp(3.4rem, 13vw, 5.4rem);
-                letter-spacing: 0.08em;
-            }
+
+        .card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px -10px rgba(6, 182, 212, 0.2);
+        }
+
+        .card h3 { 
+            font-size: 1.3rem; margin-bottom: 15px; color: #fff; display: flex; align-items: center; gap: 12px; 
+        }
+
+        .card h3 i { color: var(--accent-cyan); transition: color 0.3s; }
+        .card:hover h3 i { color: var(--accent-green); }
+
+        .card p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
+        
+        .data-proof {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            font-family: monospace;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 12px;
+            display: block;
+            opacity: 0.9;
+        }
+
+        /* --- Semantic Explanation --- */
+        .semantic-box {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .semantic-tag {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .semantic-tag span { color: var(--accent-cyan); font-weight: 700; }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: 120px;
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background: #010205;
+        }
+
+        .contact-email {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            border-bottom: 2px solid var(--accent-cyan);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Space Grotesk';
+        }
+        .contact-email:hover { color: var(--accent-cyan); border-bottom-color: transparent; }
+
+        @media (max-width: 768px) {
+            .grid-9 { grid-template-columns: 1fr; }
+            .mega-title { gap: 0; }
         }
     </style>
 </head>
 <body>
-    <div class="light-effect"></div>
-    <div class="container">
-        <h1><span class="domain">ihash.ai</span></h1>
-        <p>This domain is reserved.<br>Future project consideration.</p>
-        
-        <!-- 低调中性免责声明 -->
-        <div class="note-section">
-            <div class="note-text">
-                This domain is reserved for future development and is not associated with any third party.
-            </div>
-        </div>
-        
-        <!-- 联系方式 -->
-        <div class="contact-section">
-            <a href="#" class="email-link" aria-label="Send email">
-                <span id="email-display">joshua369x@gmail.com</span>
-            </a>
-            <div class="contact-note">
-                For strategic inquiries only.
-            </div>
-        </div>
-    </div>
 
-    <div class="footer">
-        © <span id="currentYear"></span> ihash.ai — All rights reserved.
-    </div>
+    <header>
+        <div class="container nav-flex">
+            <div class="logo notranslate">iHASH.AI</div>
+            <a href="https://www.afternic.com/domain/ihash.ai" target="_blank" class="buy-btn" style="width: auto; padding: 10px 24px; margin:0; font-size: 0.9rem; border:none; background: #fff; color: #000;">
+                Purchase Asset
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <!-- DYNAMIC MEGA TITLE -->
+            <div class="mega-title notranslate">
+                <span class="title-prefix">i</span>
+                <span class="title-word" data-text="HASH">HASH</span>
+                <span class="title-tld">.AI</span>
+            </div>
+            
+            <p class="hero-sub">
+                "My Hash" & "Intelligent Compute". The defining keyword for <span class="highlight-term">DePIN</span>, <span class="highlight-term">Zero-Knowledge AI</span>, and <span class="highlight-term-2">Digital Identity</span>.
+            </p>
+
+            <!-- PRICING BOX -->
+            <div id="purchase" class="price-hero-card">
+                <span class="status-badge">Web3 + AI Convergence</span>
+                <div class="price-main">$42,000 <span style="font-size:1rem; color:#888; font-weight:400;">USD</span></div>
+                <div class="price-sub">or $3,500/mo via 12-Month Financing</div>
+                
+                <!-- NEW TAB LINK -->
+                <a href="https://www.afternic.com/domain/ihash.ai" target="_blank" class="buy-btn">
+                    Secure This Asset Now <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px; font-size: 0.8em;"></i>
+                </a>
+                
+                <p style="font-size: 0.85rem; color: #666;">
+                    <i class="fa-solid fa-lock"></i> Secured Escrow Transaction via Afternic/GoDaddy
+                </p>
+            </div>
+
+            <div class="semantic-box">
+                <div class="semantic-tag"><span>i</span> = Identity / Intelligent / Individual</div>
+                <div class="semantic-tag"><span>Hash</span> = Compute / Proof / Verify</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9 VERTICALS -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>9 Pillars of Intelligent Hashing</h2>
+                <p>The bridge between the Immutable (Blockchain) and the Generative (AI).</p>
+            </div>
+
+            <div class="grid-9">
+                <!-- 1. DePIN -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-server"></i> DePIN Compute</h3>
+                    <p>Decentralized Physical Infrastructure Networks. "iHash" represents the personal contribution of GPU hashrate to train AI models.</p>
+                    <span class="data-proof">DePIN Market Cap: $20B+ (Messari)</span>
+                </div>
+
+                <!-- 2. ZKML -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-fingerprint"></i> ZK-ML Verification</h3>
+                    <p>Zero-Knowledge Machine Learning. How do you trust an AI? You verify its cryptographic "Hash" without revealing the model weights.</p>
+                    <span class="data-proof">Vitalik Buterin's Top Trend (2025)</span>
+                </div>
+
+                <!-- 3. Self-Sovereign Identity -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-passport"></i> AI Identity (SSI)</h3>
+                    <p>"My Hash". In a world of deepfakes, iHash.ai is the home for Proof of Personhood and immutable digital identity.</p>
+                    <span class="data-proof">Worldcoin/Civic Sector Growth</span>
+                </div>
+
+                <!-- 4. Content Authenticity -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-stamp"></i> Content Authenticity</h3>
+                    <p>C2PA Standards. Hashing images and video to prove origin. "iHash" implies "I verified this content."</p>
+                    <span class="data-proof">Deepfake Defense Market: High Demand</span>
+                </div>
+
+                <!-- 5. Personal AI Cloud -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-cloud-arrow-up"></i> Personal Compute</h3>
+                    <p>The "i" in Apple style. iHash is the brand for Personal AI Servers or home mining rigs that double as inference engines.</p>
+                    <span class="data-proof">Edge Computing Growth: 37% CAGR</span>
+                </div>
+
+                <!-- 6. Data Provenance -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-link"></i> Data Provenance</h3>
+                    <p>Tracking the lineage of AI training data on-chain. Every dataset gets a hash. This domain defines the Data Supply Chain.</p>
+                    <span class="data-proof">Regulatory Requirement (EU AI Act)</span>
+                </div>
+
+                <!-- 7. Hybrid Mining -->
+                <div class="card">
+                    <h3><i class="fa-brands fa-bitcoin"></i> Hybrid Mining</h3>
+                    <p>The pivot from SHA-256 to Inference. Bitcoin miners repurposing hashrate for AI. iHash bridges these two massive industries.</p>
+                    <span class="data-proof">Trillion Dollar Asset Convergence</span>
+                </div>
+
+                <!-- 8. AI Governance -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-gavel"></i> AI DAO Governance</h3>
+                    <p>Autonomous agents voting based on cryptographic proofs. Hashing inputs to ensure fair execution of DAO protocols.</p>
+                    <span class="data-proof">Web3 Governance Sector</span>
+                </div>
+
+                <!-- 9. Smart Contracts -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-file-contract"></i> Intelligent Contracts</h3>
+                    <p>AI agents triggering blockchain transactions. The "Hash" is the trigger; the "Intelligence" is the decision maker.</p>
+                    <span class="data-proof">The Future of Ethereum Agents</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h3 style="margin-bottom: 20px; color: #fff;">Acquire This Legacy Brand</h3>
+            
+            <div class="contact-email" onclick="copyEmail()">
+                joshua369x@gmail.com
+            </div>
+            
+            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">Click email to copy to clipboard</p>
+            <p style="margin-top: 60px; font-size: 0.75rem; color: #444; text-transform: uppercase;">
+                &copy; 2026 <span class="notranslate">iHash.ai</span>. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 
     <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        const email = 'joshua369x' + '@' + 'gmail.com';
-        const subject = '?subject=Inquiry: ihash.ai';
-        const mailto = 'mailto:' + email + subject;
-        document.querySelector('.email-link').href = mailto;
-        document.getElementById('email-display').textContent = email;
+        function copyEmail() {
+            const email = "joshua369x@gmail.com";
+            navigator.clipboard.writeText(email).then(function() {
+                alert("Email address copied: " + email);
+            });
+        }
     </script>
 </body>
 </html>
