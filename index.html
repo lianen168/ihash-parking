@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IHASH.AI | The Immutable Proof of Intelligence</title>
-    <meta name="description" content="Premium Domain Asset for Sale. The bridge between Decentralized Compute, Zero-Knowledge Proofs, and AI Identity.">
+    <title>IHASH.AI | The Currency of Compute</title>
+    <meta name="description" content="Premium Domain Asset for Sale. The defining brand for Sovereign Compute, Hashrate Tokenization, and Decentralized AI.">
     <!-- Brand protection -->
     <meta name="google" content="notranslate" />
 
@@ -19,15 +19,15 @@
     <style>
         :root {
             --bg-body: #02040a; /* Deep Void Blue */
-            --bg-card: #080c14;
+            --bg-card: #050a14;
             --text-main: #e2e8f0;
             --text-muted: #94a3b8;
             --accent-cyan: #06b6d4; /* Crypto/Web3 */
-            --accent-green: #10b981; /* Compute/Matrix */
-            --accent-purple: #8b5cf6; /* AI */
-            --border: rgba(6, 182, 212, 0.15);
-            --glow: rgba(6, 182, 212, 0.1);
-            --glow-strong: rgba(6, 182, 212, 0.25);
+            --accent-green: #10b981; /* Compute/Power */
+            --accent-purple: #8b5cf6; /* AI Intelligence */
+            --border: rgba(16, 185, 129, 0.15); /* Greenish Border for Compute vibe */
+            --glow: rgba(16, 185, 129, 0.1);
+            --glow-strong: rgba(16, 185, 129, 0.25);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,16 +87,15 @@
             color: #fff;
             position: relative;
             font-family: 'Space Grotesk', monospace;
-            /* Lowercase i aesthetic like Apple/Tech */
             text-transform: lowercase; 
             margin-right: 5px;
         }
 
-        /* The dot of the 'i' pulses */
+        /* The dot of the 'i' pulses (Neural Node) */
         .title-prefix::after {
             content: '';
             position: absolute;
-            top: 18%; /* Position for the dot of the 'i' */
+            top: 18%; 
             left: 50%;
             transform: translateX(-50%);
             width: 15px;
@@ -107,15 +106,15 @@
             animation: neural-pulse 2s infinite;
         }
 
-        /* The "HASH" - Cryptographic/Compute */
+        /* The "HASH" - Compute Power */
         .title-word {
-            background: linear-gradient(180deg, #fff 0%, #94a3b8 100%);
+            background: linear-gradient(180deg, #fff 0%, #10b981 100%); /* White to Green */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             position: relative;
         }
 
-        /* Digital Scan Effect overlay on HASH */
+        /* Digital Matrix Scan Effect on HASH */
         .title-word::before {
             content: attr(data-text);
             position: absolute;
@@ -123,17 +122,18 @@
             color: var(--accent-green);
             overflow: hidden;
             width: 0%;
-            border-right: 2px solid var(--accent-green);
-            animation: digital-scan 5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+            border-right: 3px solid var(--accent-green);
+            animation: digital-scan 4s cubic-bezier(0.19, 1, 0.22, 1) infinite;
             -webkit-text-fill-color: var(--accent-green);
             white-space: nowrap;
+            filter: drop-shadow(0 0 10px var(--accent-green));
         }
 
         /* The ".AI" */
         .title-tld {
             color: var(--accent-purple);
             -webkit-text-fill-color: var(--accent-purple);
-            font-size: 0.5em; /* Smaller TLD */
+            font-size: 0.5em; 
             align-self: flex-start;
             margin-top: 15px;
             animation: ai-glow 3s ease-in-out infinite alternate;
@@ -149,7 +149,7 @@
         @keyframes digital-scan {
             0% { width: 0%; opacity: 0; }
             5% { opacity: 1; }
-            30% { width: 100%; opacity: 1; }
+            40% { width: 100%; opacity: 1; }
             80% { width: 100%; opacity: 0; }
             100% { width: 0%; opacity: 0; }
         }
@@ -162,23 +162,22 @@
         .hero-sub {
             font-size: 1.25rem;
             color: var(--text-muted);
-            max-width: 750px;
+            max-width: 800px;
             margin: 25px auto 60px;
             font-weight: 300;
         }
 
-        .highlight-term { color: var(--accent-cyan); font-weight: 600; }
-        .highlight-term-2 { color: var(--accent-green); font-weight: 600; }
+        .highlight-term { color: var(--accent-green); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
 
         /* --- Pricing Card --- */
         .price-hero-card {
             background: var(--bg-card);
-            border: 1px solid var(--accent-cyan);
+            border: 1px solid var(--accent-green);
             border-radius: 12px;
             padding: 40px;
             max-width: 500px;
             margin: 0 auto;
-            box-shadow: 0 0 50px rgba(6, 182, 212, 0.15);
+            box-shadow: 0 0 50px rgba(16, 185, 129, 0.15);
             position: relative;
         }
 
@@ -187,7 +186,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--accent-cyan);
+            background: var(--accent-green);
             color: #000;
             padding: 4px 16px;
             font-size: 0.8rem;
@@ -199,7 +198,7 @@
         }
 
         .price-main { font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
-        .price-sub { font-size: 1.1rem; color: var(--accent-green); margin-bottom: 20px; }
+        .price-sub { font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 20px; }
         
         .buy-btn {
             display: block;
@@ -218,18 +217,37 @@
 
         .buy-btn:hover { 
             transform: translateY(-3px); 
-            background: var(--accent-cyan);
-            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4);
+            background: var(--accent-green);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
         }
 
-        /* --- 9 Verticals Section --- */
+        /* --- Semantic Explanation Box --- */
+        .semantic-box {
+            margin-top: 40px;
+            padding: 25px;
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            text-align: center;
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.03);
+        }
+        .semantic-tag {
+            display: inline-block;
+            margin: 5px 15px;
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-family: 'Space Grotesk';
+        }
+        .semantic-tag span { color: var(--accent-green); font-weight: 700; font-size: 1.2rem;}
+
+        /* --- 12 Verticals Section --- */
         .section-header { text-align: center; margin: 120px 0 60px; }
         .section-header h2 { font-size: 2.5rem; margin-bottom: 15px; color: #fff; }
         .section-header p { color: var(--text-muted); max-width: 650px; margin: 0 auto; }
 
-        .grid-9 {
+        .grid-12 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 24px;
         }
 
@@ -243,45 +261,29 @@
         }
 
         .card:hover {
-            border-color: var(--accent-cyan);
+            border-color: var(--accent-green);
             transform: translateY(-8px);
-            box-shadow: 0 15px 40px -10px rgba(6, 182, 212, 0.2);
+            box-shadow: 0 15px 40px -10px rgba(16, 185, 129, 0.2);
         }
 
         .card h3 { 
-            font-size: 1.3rem; margin-bottom: 15px; color: #fff; display: flex; align-items: center; gap: 12px; 
+            font-size: 1.2rem; margin-bottom: 15px; color: #fff; display: flex; align-items: center; gap: 12px; 
         }
 
-        .card h3 i { color: var(--accent-cyan); transition: color 0.3s; }
-        .card:hover h3 i { color: var(--accent-green); }
+        .card h3 i { color: var(--accent-green); transition: color 0.3s; }
+        .card:hover h3 i { color: var(--accent-cyan); }
 
         .card p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
         
         .data-proof {
             font-size: 0.85rem;
-            color: var(--accent-green);
+            color: var(--accent-cyan);
             font-family: monospace;
             border-top: 1px solid rgba(255,255,255,0.05);
             padding-top: 12px;
             display: block;
             opacity: 0.9;
         }
-
-        /* --- Semantic Explanation --- */
-        .semantic-box {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px dashed var(--border);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .semantic-tag {
-            display: inline-block;
-            margin: 0 10px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-        .semantic-tag span { color: var(--accent-cyan); font-weight: 700; }
 
         /* --- Footer --- */
         footer {
@@ -296,15 +298,15 @@
             font-size: 1.8rem;
             font-weight: 700;
             color: #fff;
-            border-bottom: 2px solid var(--accent-cyan);
+            border-bottom: 2px solid var(--accent-green);
             cursor: pointer;
             transition: all 0.3s;
             font-family: 'Space Grotesk';
         }
-        .contact-email:hover { color: var(--accent-cyan); border-bottom-color: transparent; }
+        .contact-email:hover { color: var(--accent-green); border-bottom-color: transparent; }
 
         @media (max-width: 768px) {
-            .grid-9 { grid-template-columns: 1fr; }
+            .grid-12 { grid-template-columns: 1fr; }
             .mega-title { gap: 0; }
         }
     </style>
@@ -331,12 +333,18 @@
             </div>
             
             <p class="hero-sub">
-                "My Hash" & "Intelligent Compute". The defining keyword for <span class="highlight-term">DePIN</span>, <span class="highlight-term">Zero-Knowledge AI</span>, and <span class="highlight-term-2">Digital Identity</span>.
+                "Hash" is no longer just security. It is the <span class="highlight-term">Unit of Intelligence</span>. <br>
+                The definitive brand for the $100B+ convergence of <span style="color:#fff;">Compute Power</span> and <span style="color:#fff;">AI Infrastructure</span>.
             </p>
 
+            <div class="semantic-box">
+                <div class="semantic-tag"><span>i</span> = Intelligent / Identity / Individual</div>
+                <div class="semantic-tag"><span>Hash</span> = Compute Power / Verification / Work</div>
+            </div>
+
             <!-- PRICING BOX -->
-            <div id="purchase" class="price-hero-card">
-                <span class="status-badge">Web3 + AI Convergence</span>
+            <div id="purchase" class="price-hero-card" style="margin-top: 40px;">
+                <span class="status-badge">Web3 + AI Infrastructure</span>
                 <div class="price-main">$42,000 <span style="font-size:1rem; color:#888; font-weight:400;">USD</span></div>
                 <div class="price-sub">or $3,500/mo via 12-Month Financing</div>
                 
@@ -349,84 +357,100 @@
                     <i class="fa-solid fa-lock"></i> Secured Escrow Transaction via Afternic/GoDaddy
                 </p>
             </div>
-
-            <div class="semantic-box">
-                <div class="semantic-tag"><span>i</span> = Identity / Intelligent / Individual</div>
-                <div class="semantic-tag"><span>Hash</span> = Compute / Proof / Verify</div>
-            </div>
         </div>
     </section>
 
-    <!-- 9 VERTICALS -->
+    <!-- 12 VERTICALS -->
     <section>
         <div class="container">
             <div class="section-header">
-                <h2>9 Pillars of Intelligent Hashing</h2>
-                <p>The bridge between the Immutable (Blockchain) and the Generative (AI).</p>
+                <h2>12 Pillars of Intelligent Compute</h2>
+                <p>Compute Power is the currency of the future. "iHash" owns the narrative.</p>
             </div>
 
-            <div class="grid-9">
+            <div class="grid-12">
                 <!-- 1. DePIN -->
                 <div class="card">
-                    <h3><i class="fa-solid fa-server"></i> DePIN Compute</h3>
-                    <p>Decentralized Physical Infrastructure Networks. "iHash" represents the personal contribution of GPU hashrate to train AI models.</p>
-                    <span class="data-proof">DePIN Market Cap: $20B+ (Messari)</span>
+                    <h3><i class="fa-solid fa-network-wired"></i> DePIN Compute</h3>
+                    <p>Decentralized Physical Infrastructure Networks. "iHash" represents the personal contribution of GPU hashrate to train global AI models.</p>
+                    <span class="data-proof">Sector Valuation: $20B+ (Messari)</span>
                 </div>
 
-                <!-- 2. ZKML -->
+                <!-- 2. Hashrate Tokenization -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-coins"></i> Hashrate Tokenization</h3>
+                    <p>Real World Assets (RWA). Tokenizing computing power into tradeable assets. iHash is the perfect ticker or platform name.</p>
+                    <span class="data-proof">Trend: Compute as a Commodity</span>
+                </div>
+
+                <!-- 3. ZK-ML -->
                 <div class="card">
                     <h3><i class="fa-solid fa-fingerprint"></i> ZK-ML Verification</h3>
-                    <p>Zero-Knowledge Machine Learning. How do you trust an AI? You verify its cryptographic "Hash" without revealing the model weights.</p>
-                    <span class="data-proof">Vitalik Buterin's Top Trend (2025)</span>
+                    <p>Zero-Knowledge Machine Learning. Verifying that an AI model ran correctly using cryptographic hashes without revealing the data.</p>
+                    <span class="data-proof">Vitalik's Top AI Trend (2025)</span>
                 </div>
 
-                <!-- 3. Self-Sovereign Identity -->
+                <!-- 4. Sovereign Compute -->
                 <div class="card">
-                    <h3><i class="fa-solid fa-passport"></i> AI Identity (SSI)</h3>
-                    <p>"My Hash". In a world of deepfakes, iHash.ai is the home for Proof of Personhood and immutable digital identity.</p>
-                    <span class="data-proof">Worldcoin/Civic Sector Growth</span>
+                    <h3><i class="fa-solid fa-server"></i> Sovereign AI</h3>
+                    <p>"My Hash". Running Local LLMs on personal hardware. The anti-thesis to centralized cloud AI. Ownership of your own intelligence.</p>
+                    <span class="data-proof">Keyword: Edge Intelligence</span>
                 </div>
 
-                <!-- 4. Content Authenticity -->
+                <!-- 5. Compute Marketplaces -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-shop"></i> Compute Marketplace</h3>
+                    <p>The "Airbnb for GPUs". A platform where users buy and sell excess "Hash" (inference power) for AI tasks.</p>
+                    <span class="data-proof">Demand: GPU Shortage > 2026</span>
+                </div>
+
+                <!-- 6. Content Authenticity -->
                 <div class="card">
                     <h3><i class="fa-solid fa-stamp"></i> Content Authenticity</h3>
-                    <p>C2PA Standards. Hashing images and video to prove origin. "iHash" implies "I verified this content."</p>
-                    <span class="data-proof">Deepfake Defense Market: High Demand</span>
-                </div>
-
-                <!-- 5. Personal AI Cloud -->
-                <div class="card">
-                    <h3><i class="fa-solid fa-cloud-arrow-up"></i> Personal Compute</h3>
-                    <p>The "i" in Apple style. iHash is the brand for Personal AI Servers or home mining rigs that double as inference engines.</p>
-                    <span class="data-proof">Edge Computing Growth: 37% CAGR</span>
-                </div>
-
-                <!-- 6. Data Provenance -->
-                <div class="card">
-                    <h3><i class="fa-solid fa-link"></i> Data Provenance</h3>
-                    <p>Tracking the lineage of AI training data on-chain. Every dataset gets a hash. This domain defines the Data Supply Chain.</p>
-                    <span class="data-proof">Regulatory Requirement (EU AI Act)</span>
+                    <p>C2PA Standards. Hashing images and video to prove origin and combat deepfakes. "iHash" implies "I verified this content."</p>
+                    <span class="data-proof">Deepfake Defense Market</span>
                 </div>
 
                 <!-- 7. Hybrid Mining -->
                 <div class="card">
                     <h3><i class="fa-brands fa-bitcoin"></i> Hybrid Mining</h3>
-                    <p>The pivot from SHA-256 to Inference. Bitcoin miners repurposing hashrate for AI. iHash bridges these two massive industries.</p>
-                    <span class="data-proof">Trillion Dollar Asset Convergence</span>
+                    <p>The pivot from SHA-256 to Inference. Bitcoin miners repurposing massive hashrate centers for AI Training.</p>
+                    <span class="data-proof">Trillion Dollar Asset Pivot</span>
                 </div>
 
-                <!-- 8. AI Governance -->
+                <!-- 8. Digital Identity -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-passport"></i> AI Identity (SSI)</h3>
+                    <p>Proof of Personhood. Using a unique hash to distinguish humans from bots in an AI-saturated internet.</p>
+                    <span class="data-proof">Worldcoin / Civic Sector</span>
+                </div>
+
+                <!-- 9. Swarm Intelligence -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-users-viewfinder"></i> Swarm Computing</h3>
+                    <p>Pooling millions of small devices (phones, laptops) to create a massive "Super Hash" for distributed training.</p>
+                    <span class="data-proof">Future of Distributed AI</span>
+                </div>
+
+                <!-- 10. AI Governance -->
                 <div class="card">
                     <h3><i class="fa-solid fa-gavel"></i> AI DAO Governance</h3>
                     <p>Autonomous agents voting based on cryptographic proofs. Hashing inputs to ensure fair execution of DAO protocols.</p>
                     <span class="data-proof">Web3 Governance Sector</span>
                 </div>
 
-                <!-- 9. Smart Contracts -->
+                <!-- 11. Energy-Backed AI -->
+                <div class="card">
+                    <h3><i class="fa-solid fa-bolt"></i> Energy-Backed AI</h3>
+                    <p>The direct conversion of Energy -> Hash -> Intelligence. iHash brands the energy infrastructure powering the AI revolution.</p>
+                    <span class="data-proof">Metric: Joules per Inference</span>
+                </div>
+
+                <!-- 12. Smart Contracts -->
                 <div class="card">
                     <h3><i class="fa-solid fa-file-contract"></i> Intelligent Contracts</h3>
-                    <p>AI agents triggering blockchain transactions. The "Hash" is the trigger; the "Intelligence" is the decision maker.</p>
-                    <span class="data-proof">The Future of Ethereum Agents</span>
+                    <p>AI agents triggering blockchain transactions. The "Hash" is the secure trigger; the "Intelligence" is the decision maker.</p>
+                    <span class="data-proof">Ethereum Agent Layer</span>
                 </div>
             </div>
         </div>
